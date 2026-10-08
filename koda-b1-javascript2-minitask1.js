@@ -43,7 +43,7 @@ if (d < e) {
 }
 
 // Average
-const data = [3, 5, 1, 6, 8, 2, 9, 7, 0, 4];
+const data = [3, 5, 1, 6, 8, 2, 9, 7, 2, 4];
 let avg = 0;
 for (let i = 0; i < data.length; i++) {
   avg += data[i];

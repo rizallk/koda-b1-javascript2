@@ -64,7 +64,7 @@ flowchart TD
 ```mermaid
 flowchart TD
   start((Start))
-  data["data = [3, 5, 1, 6, 8, 2, 9, 7, 0, 4]"]
+  data["data = [3, 5, 1, 6, 8, 2, 9, 7, 2, 4]"]
   avgInit[avg = 0]
   init[i = 0]
   for{i < data.length}
