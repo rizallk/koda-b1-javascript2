@@ -5,45 +5,33 @@
 // - Average (min. 10 nilai)
 
 // Max
-const a = 45;
-const b = 20;
-const c = 68;
-const txt1 = `Nilai Max dari ${a}, ${b}, ${c} adalah `;
-if (a > b) {
-  if (a > c) {
-    console.log(txt1 + a);
-  } else {
-    console.log(txt1 + c);
-  }
-} else {
-  if (b > c) {
-    console.log(txt1 + b);
-  } else {
-    console.log(txt1 + c);
+const a = [12, 8, 37];
+const b = [50, 43, 2];
+const c = [...a, ...b];
+let max = c[0];
+for (let i = 0; i < c.length; i++) {
+  if (max < c[i]) {
+    max = c[i];
   }
 }
+console.log(`Nilai Max dari ${c} adalah ${max}`);
 
 // Min
-const d = 7;
-const e = 10;
-const f = 3;
-const txt2 = `Nilai Min dari ${d}, ${e}, ${f} adalah `;
-if (d < e) {
-  if (d < f) {
-    console.log(txt2 + d);
-  } else {
-    console.log(txt2 + f);
-  }
-} else {
-  if (e < f) {
-    console.log(txt2 + e);
-  } else {
-    console.log(txt2 + f);
+const d = [1, 3, 6];
+const e = [9, 2, 7];
+const f = [...d, ...e];
+let min = f[0];
+for (let i = 0; i < f.length; i++) {
+  if (min > f[i]) {
+    min = f[i];
   }
 }
+console.log(`Nilai Min dari ${f} adalah ${min}`);
 
 // Average
-const data = [3, 5, 1, 6, 8, 2, 9, 7, 2, 4];
+const data1 = [3, 5, 1, 6, 8];
+const data2 = [2, 9, 7, 2, 4];
+const data = [...data1, ...data2];
 let avg = 0;
 for (let i = 0; i < data.length; i++) {
   avg += data[i];
