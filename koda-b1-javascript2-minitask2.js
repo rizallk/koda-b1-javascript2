@@ -24,13 +24,17 @@ const fakturPembayaran = {
 
 const { userName, email, productName, qty, price } = fakturPembayaran;
 
-console.log('\n=========================');
-console.log('|   FAKTUR PEMBAYARAN   |');
-console.log('=========================');
-console.log(`Nama Pembeli  : ${userName}
+function print(userName, email, productName, price, qty) {
+  console.log('\n=========================');
+  console.log('|   FAKTUR PEMBAYARAN   |');
+  console.log('=========================');
+  console.log(`Nama Pembeli  : ${userName}
 Email         : ${email}
 Nama Produk   : ${productName}
 Harga Satuan  : Rp. ${price}
 Jumlah (qty)  : ${qty} 
 Total Tagihan : Rp. ${price * qty}
   `);
+}
+
+print(userName, email, productName, price, qty);
