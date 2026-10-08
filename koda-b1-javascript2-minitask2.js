@@ -24,7 +24,7 @@ const fakturPembayaran = {
 
 const { userName, email, productName, qty, price } = fakturPembayaran;
 
-function print(userName, email, productName, price, qty) {
+function print(userName, email, productName, price, qty, cetakanKe = 1) {
   console.log('\n=========================');
   console.log('|   FAKTUR PEMBAYARAN   |');
   console.log('=========================');
@@ -34,7 +34,9 @@ Nama Produk   : ${productName}
 Harga Satuan  : Rp. ${price}
 Jumlah (qty)  : ${qty} 
 Total Tagihan : Rp. ${price * qty}
+Cetakan Ke    : ${cetakanKe}
   `);
 }
 
 print(userName, email, productName, price, qty);
+print(userName, email, productName, price, qty, 2);
